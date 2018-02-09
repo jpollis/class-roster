@@ -1,0 +1,7 @@
+<h1>Users</h1>
+
+<ol class="list-group">
+  <% @users.each do |user| %>
+  <li class="list-group-item"> <%= link_to user.name, "/users/#{user.id}" %> </li>
+  <% end %>
+</ol>
